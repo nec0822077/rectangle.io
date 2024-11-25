@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">🌟 To-Do</h2>
+      <nav>
+        <ul>
+          <li class="active">Today Tasks</li>
+          <li>Personal</li>
+          <li>Work</li>
+          <li>Scheduled Tasks</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <div>
+          <h1>Today Main Focus</h1>
+          <p>Design Team Meeting</p>
+        </div>
+        <button class="add-task-btn"><i class="fa fa-plus"></i> Add Task</button>
+      </header>
+
+      <section class="task-list" id="taskList">
+        <!-- Task items will appear here -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Edit Task Modal -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Edit Task</h2>
+      <input type="text" id="editTaskInput" placeholder="Edit task" />
+      <input type="time" id="editTaskTime" />
+      <button id="saveTaskBtn">Save</button>
+      <button id="cancelEditBtn">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
